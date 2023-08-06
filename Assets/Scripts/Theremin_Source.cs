@@ -11,12 +11,10 @@ public class Theremin_Player : MonoBehaviour
     int sampleRate = 48000;
     double phase = 0.0;
     double phaseIncrement = 0.0;
-    float amplitude = 0.5f; 
+    float amplitude = 0.0f; 
 
     void Start()
     {
-        phaseIncrement = Mathf.PI * 2.0 * 1000.0f / sampleRate;
-
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 0.0f;
 

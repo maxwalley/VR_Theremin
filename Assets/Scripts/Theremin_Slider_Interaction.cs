@@ -13,7 +13,7 @@ public class Theremin_Slider_Interaction : MonoBehaviour
 
     Theremin_Player theremin;
 
-    void Start()
+    void Awake()
     {
         theremin = gameObject.GetComponent<Theremin_Player>();
 
